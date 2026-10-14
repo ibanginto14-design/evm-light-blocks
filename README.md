@@ -19,12 +19,15 @@ Measured on the three EVM fixture blocks shipped in `streamingfast/substreams` (
 
 | Chain (block) | Light block, raw / compressed | Data per 1,000-block segment | Decompression per segment | Typical module per block | Output |
 | --- | --- | --- | --- | --- | --- |
-| Ethereum (16,021,772) | 14.4% / 19.1% | 163 → 31 MB (5.2x) | 0.47 → 0.06 s (8.2x) | 4.32 → 0.96 ms (4.5x) | identical |
-| BNB Chain (78,347,457) | 16.2% / 18.6% | 162 → 30 MB (5.4x) | 0.57 → 0.06 s (9.8x) | 4.46 → 1.02 ms (4.4x) | identical |
-| Polygon (82,340,855) | 14.7% / 16.8% | 516 → 87 MB (5.9x) | 2.08 → 0.36 s (5.8x) | 13.69 → 2.46 ms (5.6x) | identical |
+| Ethereum (16,021,772) | 14.4% / 19.1% | 163 → 31 MB (5.2x) | 0.50 → 0.06 s (8.7x) | 4.32 → 0.96 ms (4.5x) | identical |
+| BNB Chain (78,347,457) | 16.2% / 18.6% | 162 → 30 MB (5.4x) | 0.56 → 0.08 s (6.6x) | 4.46 → 1.02 ms (4.4x) | identical |
+| Polygon (82,340,855) | 14.7% / 16.8% | 516 → 87 MB (5.9x) | 2.04 → 0.22 s (9.3x) | 13.69 → 2.46 ms (5.6x) | identical |
 
 Raw JSON for every figure is in `bench/results/`. Absolute times come from a 2-vCPU sandbox; the
-ratios are the meaningful part.
+ratios are the meaningful part. Sizes and module outputs are deterministic and reproduce exactly.
+Decompression timings are the noisiest figure: a light block decompresses in well under 0.1 ms, and
+across repeated runs the ratio ranged from 5x to 12x. The table shows the medians committed in
+`bench/results/zstd.json` (five rounds).
 
 ## Layout
 

@@ -1,0 +1,125 @@
+{
+  "ethereum": {
+    "full": {
+      "compressed_bytes": 162765,
+      "decompress_ms_per_block": 0.502662500025508,
+      "decompress_ms_per_block_rounds": [
+        0.5726199999571691,
+        0.5792455000346308,
+        0.502662500025508,
+        0.47493750014382385,
+        0.4405685000392623
+      ],
+      "segment_compressed_MB": 162.765,
+      "segment_decompress_s": 0.502662500025508
+    },
+    "no_traces": {
+      "compressed_bytes": 31160,
+      "decompress_ms_per_block": 0.05804949989851593,
+      "decompress_ms_per_block_rounds": [
+        0.07627999991655088,
+        0.08610849999968195,
+        0.05797350002012536,
+        0.05804949989851593,
+        0.05768150003859773
+      ],
+      "segment_compressed_MB": 31.16,
+      "segment_decompress_s": 0.05804949989851593
+    },
+    "logs_view": {
+      "compressed_bytes": 18344,
+      "decompress_ms_per_block": 0.030895999998392654,
+      "decompress_ms_per_block_rounds": [
+        0.04010199995718722,
+        0.03374799996436195,
+        0.030837500048619404,
+        0.0308420000010301,
+        0.030895999998392654
+      ],
+      "segment_compressed_MB": 18.344,
+      "segment_decompress_s": 0.030895999998392654
+    }
+  },
+  "bnb": {
+    "full": {
+      "compressed_bytes": 162116,
+      "decompress_ms_per_block": 0.5579449999686403,
+      "decompress_ms_per_block_rounds": [
+        0.613186999885329,
+        0.5356000001484063,
+        0.517914499937433,
+        0.5579449999686403,
+        0.6734559999586054
+      ],
+      "segment_compressed_MB": 162.116,
+      "segment_decompress_s": 0.5579449999686403
+    },
+    "no_traces": {
+      "compressed_bytes": 30121,
+      "decompress_ms_per_block": 0.08399199987252359,
+      "decompress_ms_per_block_rounds": [
+        0.08399199987252359,
+        0.08825350005281507,
+        0.05832049998844013,
+        0.05847099987477122,
+        0.0913399999262765
+      ],
+      "segment_compressed_MB": 30.121,
+      "segment_decompress_s": 0.08399199987252359
+    },
+    "logs_view": {
+      "compressed_bytes": 17697,
+      "decompress_ms_per_block": 0.031862500009083305,
+      "decompress_ms_per_block_rounds": [
+        0.044981500082030834,
+        0.031862500009083305,
+        0.03167399995618325,
+        0.03172049991917447,
+        0.04797650001364673
+      ],
+      "segment_compressed_MB": 17.697,
+      "segment_decompress_s": 0.031862500009083305
+    }
+  },
+  "polygon": {
+    "full": {
+      "compressed_bytes": 515745,
+      "decompress_ms_per_block": 2.041293000047517,
+      "decompress_ms_per_block_rounds": [
+        1.9303500000660279,
+        2.041293000047517,
+        2.239931999952205,
+        1.9969329998730245,
+        2.097607000109747
+      ],
+      "segment_compressed_MB": 515.745,
+      "segment_decompress_s": 2.041293000047517
+    },
+    "no_traces": {
+      "compressed_bytes": 86800,
+      "decompress_ms_per_block": 0.21871400008421915,
+      "decompress_ms_per_block_rounds": [
+        0.22227749991543533,
+        0.21871400008421915,
+        0.20876550001958094,
+        0.315104000037536,
+        0.20858850007243745
+      ],
+      "segment_compressed_MB": 86.8,
+      "segment_decompress_s": 0.21871400008421915
+    },
+    "logs_view": {
+      "compressed_bytes": 49944,
+      "decompress_ms_per_block": 0.11586549999265117,
+      "decompress_ms_per_block_rounds": [
+        0.11654549996364949,
+        0.11075249994974001,
+        0.11100550000264775,
+        0.17309699990164518,
+        0.11586549999265117
+      ],
+      "segment_compressed_MB": 49.944,
+      "segment_decompress_s": 0.11586549999265117
+    }
+  }
+}

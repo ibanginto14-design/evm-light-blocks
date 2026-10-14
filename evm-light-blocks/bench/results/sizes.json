@@ -1,0 +1,116 @@
+{
+  "ethereum": {
+    "block_number": 16021772,
+    "detail_level": "DETAILLEVEL_EXTENDED",
+    "transactions": 76,
+    "calls": 862,
+    "logs_iterated": 306,
+    "bytes_by_part": {
+      "header": 595,
+      "tx_calls": 662635,
+      "tx_receipt_logs": 54219,
+      "tx_input": 20357,
+      "balance_changes": 0,
+      "code_changes": 0,
+      "system_calls": 0
+    },
+    "sizes": {
+      "full": {
+        "raw_bytes": 778401,
+        "zstd3_bytes": 162765,
+        "zstd19_bytes": 146919
+      },
+      "no_traces": {
+        "raw_bytes": 112323,
+        "zstd3_bytes": 31160,
+        "zstd19_bytes": 29313
+      },
+      "logs_view": {
+        "raw_bytes": 63391,
+        "zstd3_bytes": 18344,
+        "zstd19_bytes": 17621
+      },
+      "tx_view": {
+        "raw_bytes": 87302,
+        "zstd3_bytes": 23350,
+        "zstd19_bytes": 21908
+      }
+    }
+  },
+  "bnb": {
+    "block_number": 78347457,
+    "detail_level": "DETAILLEVEL_EXTENDED",
+    "transactions": 70,
+    "calls": 872,
+    "logs_iterated": 317,
+    "bytes_by_part": {
+      "header": 951,
+      "tx_calls": 779458,
+      "tx_receipt_logs": 58817,
+      "tx_input": 57587,
+      "balance_changes": 89,
+      "code_changes": 0,
+      "system_calls": 251
+    },
+    "sizes": {
+      "full": {
+        "raw_bytes": 935207,
+        "zstd3_bytes": 162116,
+        "zstd19_bytes": 142861
+      },
+      "no_traces": {
+        "raw_bytes": 151891,
+        "zstd3_bytes": 30121,
+        "zstd19_bytes": 27863
+      },
+      "logs_view": {
+        "raw_bytes": 67798,
+        "zstd3_bytes": 17697,
+        "zstd19_bytes": 16685
+      },
+      "tx_view": {
+        "raw_bytes": 127970,
+        "zstd3_bytes": 22638,
+        "zstd19_bytes": 21043
+      }
+    }
+  },
+  "polygon": {
+    "block_number": 82340855,
+    "detail_level": "DETAILLEVEL_EXTENDED",
+    "transactions": 116,
+    "calls": 2422,
+    "logs_iterated": 1260,
+    "bytes_by_part": {
+      "header": 885,
+      "tx_calls": 2835167,
+      "tx_receipt_logs": 307116,
+      "tx_input": 120057,
+      "balance_changes": 0,
+      "code_changes": 0,
+      "system_calls": 251
+    },
+    "sizes": {
+      "full": {
+        "raw_bytes": 3333648,
+        "zstd3_bytes": 515745,
+        "zstd19_bytes": 443754
+      },
+      "no_traces": {
+        "raw_bytes": 488478,
+        "zstd3_bytes": 86800,
+        "zstd19_bytes": 78867
+      },
+      "logs_view": {
+        "raw_bytes": 323668,
+        "zstd3_bytes": 49944,
+        "zstd19_bytes": 44964
+      },
+      "tx_view": {
+        "raw_bytes": 448959,
+        "zstd3_bytes": 71938,
+        "zstd19_bytes": 65513
+      }
+    }
+  }
+}

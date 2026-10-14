@@ -1,0 +1,14 @@
+[package]
+name = "decode_buffa"
+version = "0.1.0"
+edition = "2021"
+[lib]
+crate-type = ["cdylib"]
+[dependencies]
+substreams = "0.8"
+substreams-ethereum = "0.12"
+buffa = "0.9.2"
+[profile.release]
+lto = true
+opt-level = 's'
+strip = "debuginfo"

@@ -1,0 +1,37 @@
+specVersion: v0.1.0
+package:
+  name: evm_blocks_without_traces
+  version: v0.1.0
+  description: |
+    Type-preserving light EVM blocks. Outputs the same sf.ethereum.type.v2.Block with call traces
+    and block-level state changes removed, so modules that only read headers, transactions,
+    receipts and logs can consume a fraction of the bytes without changing their code.
+
+network: mainnet
+
+imports:
+  ethereum: ./substreams-ethereum-v0.10.5.spkg
+
+binaries:
+  default:
+    type: wasm/rust-v1
+    file: ./target/wasm32-unknown-unknown/release/evm_blocks_without_traces.wasm
+
+modules:
+  - name: blocks_without_traces
+    kind: map
+    inputs:
+      - source: sf.ethereum.type.v2.Block
+    output:
+      type: proto:sf.ethereum.type.v2.Block
+    doc: |
+      `blocks_without_traces` is the EVM counterpart of Solana's `blocks_without_votes`.
+
+      It returns the very same `sf.ethereum.type.v2.Block` minus `transaction_traces[].calls`,
+      `system_calls`, `balance_changes` and `code_changes`, and with `detail_level` set to
+      `DETAILLEVEL_BASE`. Header, transactions, receipts and logs are untouched.
+
+      To use it, replace `source: sf.ethereum.type.v2.Block` with
+      `map: <import>:blocks_without_traces` in your module inputs. Your handler code does not
+      change. Do not use it if your module reads calls, storage changes, balance changes,
+      nonce changes, code changes or gas changes.

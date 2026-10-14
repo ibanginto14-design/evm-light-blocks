@@ -1,0 +1,35 @@
+{
+  "ethereum": {
+    "full_bytes": 778401,
+    "light_bytes": 112323,
+    "light_pct": 14.4,
+    "typical_output_bytes": 47188,
+    "typical_output_identical": true,
+    "typical_full_ms_median": 4.31731650007805,
+    "typical_light_ms_median": 0.9579805000612396,
+    "speedup": 4.506685156745949,
+    "blocks_without_traces_ms_median": 4.7848655000279905
+  },
+  "bnb": {
+    "full_bytes": 935207,
+    "light_bytes": 151891,
+    "light_pct": 16.2,
+    "typical_output_bytes": 56289,
+    "typical_output_identical": true,
+    "typical_full_ms_median": 4.464576000032139,
+    "typical_light_ms_median": 1.019236499928411,
+    "speedup": 4.380314088384512,
+    "blocks_without_traces_ms_median": 5.002220500045951
+  },
+  "polygon": {
+    "full_bytes": 3333648,
+    "light_bytes": 488478,
+    "light_pct": 14.7,
+    "typical_output_bytes": 76415,
+    "typical_output_identical": true,
+    "typical_full_ms_median": 13.694584000063514,
+    "typical_light_ms_median": 2.4608994999653078,
+    "speedup": 5.564869268434803,
+    "blocks_without_traces_ms_median": 16.210536000016873
+  }
+}
